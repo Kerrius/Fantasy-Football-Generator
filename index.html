@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type= "text/css" href="./assets/css/style.css"
+    <title>Fantasty Football Draft Creator</title>
+</head>
+<body>
+  <main>
+    <section class="main">
+      <h1 class="title">Fantasty Football Draft Selection</h1>
+      <p>Utilize our advanced technology to help autodraft the most successful fantasy team!</p>
+    </section>
+    <section>
+      <p class="leaguesize">
+        <div class="league range__slider" data-min="8" data-max="12">
+          <div class="length__title field-title" data-length='0'>League Size:</div>
+          <input id="slider" type="range" min="8" max="12" value="4" />
+        </div>
+      
+        <p id="" class="size"></p>
+      </p>
+      <p class="scoretype">
+          Standard
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          Points Per Reception
+          </p>
+    </section>
+    <section>
+      <p>
+        <button id="startdraft" class="autodraft">
+          Autodraft
+        </button>
+      </p>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
