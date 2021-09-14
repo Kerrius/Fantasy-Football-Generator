@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fantasy-Football-Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="page2.css"/>
+  </head>
+  <body>
+    
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title has-text-white is-size-1">
+            Fantasy-Football
+            </h1>
+            <h1 class="subtitle has-text-link">
+              We are currently in the midst of football season, and with the ever-changing environment of the NFL and the large sect of people who are involved in fantasy 
+              football we wanted to create something that took a more simple approach to the auto-drafting process. 
+            </h1>
+          </div>
+        </div>
+        <div class="hero-foot">
+          <nav class="tabs is-boxed is-fullwidth">
+            <div class="container has-text-centered">
+              <ul class= "event">
+                <li class="is-active" id="liveevent"><a>News</a></li>
+                <li class="is-active" id="myteam"><a>My Team</a></li>
+              </ul>
+              <div class="card newscard" style="display: none;">
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img id="image" src="">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p id="headline" class="title is-4"></p>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <p id="description"></p>
+                    <a id="link" href="#"></a> <a id="espnlink" href="#"></a>
+                    <br>
+                    <time id="published"></time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="page2.js"></script>
+
+  </body>
+</html>
