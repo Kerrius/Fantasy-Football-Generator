@@ -11,3 +11,4 @@ slider.oninput = function() {
 button.onclick = function () {
   location.href="pagetwo.html"
 }
+
