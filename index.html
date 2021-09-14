@@ -2,42 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type= "text/css" href="./assets/css/style.css"
-    <title> Fantasty Football Draft Creator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Fantasty Football Draft Creator</title>
 </head>
 <body>
+
   <main>
-    <section class="main">
+    <div class="mainCard">
       <h1 class="title">Fantasty Football Draft Selection</h1>
-      <p>Utilize our advanced technology to help autodraft the most successful fantasy team!</p>
-    </section>
-    <section>
-      <p class="leaguesize">
-        <div class="league range__slider" data-min="8" data-max="12">
-          <div class="length__title field-title" data-length='0'>League Size:</div>
-          <input id="slider" type="range" min="8" max="12" value="4" />
-        </div>
-      
-        <p id="" class="size"></p>
-      </p>
-      <p class="scoretype">
-          Standard
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-          Points Per Reception
-          </p>
-    </section>
-    <section>
-      <p>
-        <button id="startdraft" class="autodraft">
-          Autodraft
-        </button>
-      </p>
-    </section>
+        <p>Utilize our autodraft technology to create a high performing Fantasy Football team!</p>
+    </div>
+    <div class="slidecontainer">
+      <h2>League Size Selection</h2>
+      <input type="range" min="8" max="12" value="10" class="slider" id="myRange">
+      <p>Number of Teams in League: <span id="demo"></span></p>
+    </div>
+    <div class="score"
+    <input type="checkbox" id="customCheckbox">
+  <label for="customCheckbox"></label>
+  </div>
+<section> 
+    <div class="autodraft">
+      <button class= "button is-dark is-hovered is-large" id = "autodraft">
+      Autodraft
+    </button>
+    </div> 
+  <figure class="image is-128x128">
+      <img src="FFL-Logo.png">
+    </figure>
+ </section>
   </main>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
+
