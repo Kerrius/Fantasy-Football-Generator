@@ -17,8 +17,8 @@ liveevent.addEventListener("click", function(){
         var linkval = data['articles'][0]['links']['api']['news']['href'];
         var espnlinkval = data['link']['href'];
         var publishedval = data['articles'][0]['published'];
-        //var imageval = data['articles'][0]['images'][0]['url'];
-        //image.innerHTML=imageval
+        var imageval = data['articles'][0]['images'][0]['url'];
+        image.src=imageval
         headline.innerHTML= headlineval;
         description.innerHTML= descriptionval;
         link.innerHTML=linkval
